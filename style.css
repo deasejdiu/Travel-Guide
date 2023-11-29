@@ -4,6 +4,10 @@ body{
 }
 
 .midis{
-    display: inline;
-    margin: 20px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: space-around;
 }
