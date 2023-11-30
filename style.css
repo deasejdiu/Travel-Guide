@@ -3,19 +3,19 @@ body{
     background-size: cover;
 }
 
-.navigationbar{
-    display: flex;
+.midis{
+	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: space-between;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: space-around;
 }
 .qysh{
-    display: flex;
+	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: space-around;
+	justify-content: flex-end;
+	align-items: baseline;
+	align-content: space-evenly;
 }
