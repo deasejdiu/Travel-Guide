@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DD Travel</title>
     <link rel="stylesheet" href="style.css">
+    <script src="travel.js"></script>
 </head>
 <body>
     
@@ -14,24 +15,28 @@
             </div>
             <div class="midis">
                 <ul class="navigationbar">
-                    <li><a href="vendet.html">Vendet</a></li>
-                    <p></p>
-                    <li><a href="flights.html">Fluturimet</a></li>
-                    <p></p>
-                    <li> <a href="book.html">Rezervimet</a></li>
+                    <a href="vendet.html">Vendet</a>
+                    <a href="flights.html">Fluturimet</a>
+                    <a href="book.html">Rezervimet</a>
+                    <a href="contactus.html">Contact Us</a>
 
     
                 </ul>
-            </div>
-            <div class="qyshi">
-                <a href="contactus.html">Contact Us</a>
-            </div>
         </header>
     
     <div class="logo">
-        <p>dea diellza </p>
-        <p>diellza dea</p>
-        <p>bon de moo</p>
+        
     </div>
+
+    <form id="registrationForm" onsubmit="validateForm(); return false;">
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" onclick="validateForm()">Submit</button>
+    </form>
 </body>
 </html>
