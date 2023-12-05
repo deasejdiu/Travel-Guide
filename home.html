@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DD Travel</title>
     <link rel="stylesheet" href="style.css">
+    <script src="travel.js"></script>
 </head>
 <body>
     
@@ -13,6 +14,7 @@
     
             </div>
             <div class="midis">
+
                  
                     <a href="vendet.html">Vendet</a>
                     <a href="flights.html">Fluturimet</a>
@@ -37,5 +39,31 @@
      <p>dea ,a e mir a ne bote dea sejdiu
         
      </p>
+
+                <ul class="navigationbar">
+                    <a href="vendet.html">Vendet</a>
+                    <a href="flights.html">Fluturimet</a>
+                    <a href="book.html">Rezervimet</a>
+                    <a href="contactus.html">Contact Us</a>
+
+    
+                </ul>
+        </header>
+    
+    <div class="logo">
+        
+    </div>
+
+    <form id="registrationForm" onsubmit="validateForm(); return false;">
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" onclick="validateForm()">Submit</button>
+    </form>
+
 </body>
 </html>
