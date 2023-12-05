@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flights.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="color: rgb(173, 8, 107);">Flight Booking</h1>
+        <form action="#" method="post">
+            <label for="departure">Departure Location</label>
+            <select name="departure" id="departure" required>
+                <option value="" disabled selected>Select Departure City</option>
+                <option value="prishtine">Prishtina (PRN)</option>
+                <option value="vienna">Vienna (VIE)</option>
+                <option value="vienna">Frankfurt (Any)</option>
+                <option value="vienna">Zurich(ZRH)</option>
+                <option value="vienna">Vienna (VIE)</option>
+                <option value="paris">Paris (CDG)</option>
+                <option value="london">London (LHR)</option>
+                
+            </select>
+
+            <label for="destination">Destination</label>
+            <select name="destination" id="destination" required>
+                <option value="" disabled selected>Select Destination City</option>
+                <option value="paris">Paris (CDG)</option>
+                <option value="london">London (LHR)</option>
+                <option value="prishtine">Prishtina (PRN)</option>
+                <option value="vienna">Vienna (VIE)</option>
+                <option value="vienna">Frankfurt (Any)</option>
+                <option value="vienna">Zurich(ZRH)</option>
+                <option value="vienna">Vienna (VIE)</option>
+                
+            </select>
+
+            <label for="departure-date">Departure Date</label>
+            <input type="date" id="departure-date" name="departure-date" required>
+
+            <label for="return-date">Return Date</label>
+            <input type="date" id="return-date" name="return-date" required>
+
+            <button type="submit">Search Flights</button>
+        </form>
+    </div>
+</body>
+</html>
+
+    
+</body>
+</html>
