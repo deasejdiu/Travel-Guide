@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DD Travel</title>
     
-    <link rel="stylesheet" href="style.css">
-    <script src="travel.js"></script>
+    <link rel="stylesheet" href = "style.css">
+    <script src="detyra.js"></script>
 </head>
 <body>
     
@@ -18,7 +18,6 @@
                 <img src="logoddtravel.jpg" alt=""  style="height: auto;width: 60px; margin-right: 10px;" >
                 <br>
                     <a href="vendet.html"><button>Vendet</button></a>
-                    
                     <a href="flights.html" style=><button>Fluturimet</button></a>
                     <a href="book.html" style="color: aliceblue"><button>Rezervo</button></a>
                     <br>
@@ -32,22 +31,29 @@
         </header>
 
    
-    
-
+        <form id="loginForm" onsubmit="validateForm(); return false;">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
         
-    
-    
-
-    <form id="registrationForm" onsubmit="validateForm(); return false;">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
         
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+            <div class="remember-forgot">
+                <label >
+                    <input type="checkbox" id="rememberMe"> 
+                    Remember me
+                </label>
+            </div>
+            
+            <div class="login-register">
+                <p>Don't have an account?</p>
+                <a href="sign-in.html">Register</a>
+            </div>        
+            <button type="submit">Submit</button>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-
-        <button type="submit" onclick="validateForm()">Submit</button>
-    </form>
+           
+        </form>
+        
 
 </body>
 </html>
