@@ -21,8 +21,6 @@ button{
 }
 
 .qysh {
-	display: flex;
-    align-items: center;
     margin-left: auto;
 }
 
@@ -96,24 +94,9 @@ button:hover {
     color: #f00;
     margin-top: -10px;
     margin-bottom: 10px;
-
 }
-.remember-forgot{
-	display: flex;
-	flex-direction: row;
 
-}
 	.login-register{
 		display: flex;
 		flex-direction: row;
 	}
-*registrationForm{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-    background: url('sign-in.jpg')no-repeat;
-    background-size: cover;
-	background-position: center;
-
-}
