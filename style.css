@@ -21,6 +21,8 @@ button{
 }
 
 .qysh {
+	display: flex;
+    align-items: center;
     margin-left: auto;
 }
 
