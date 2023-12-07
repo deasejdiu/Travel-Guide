@@ -4,29 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="home.html">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-
-    <img src="signin.jpg" alt="" style="height: ">
-
     <form id="registrationForm" onsubmit="validateForm(); return false;">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="surname">Surname:</label>
-        <input type="text" id="surname" name="surname" required>
-
+        
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
 
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
 
         <button type="submit" onclick="validateForm()">Submit</button>
     </form>
+</body>
 </html>
