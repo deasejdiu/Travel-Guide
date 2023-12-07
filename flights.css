@@ -57,13 +57,3 @@ button {
 button:hover {
     background-color: #e65c9e;
 }
-header{
-    flex-direction: row;
-}
-.qysh{
-    margin-left: auto;
-}
-.midis {
-    display: flex;
-    align-items: center;
-  }
