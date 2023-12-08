@@ -58,3 +58,113 @@ button:hover {
     background-color: #e65c9e;
 }
 
+
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  .rresht {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+  form {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .inputBox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .inputBox input {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  .button {
+    background-color: #ff69b4; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #d1478e; 
+  }
+  /* vendet*/
+  .videot{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .videot{
+    padding: 2rem 9%;
+
+  }
+  .videot .content{
+    text-align: center;
+  }
+  .videot .content h3{
+    font-size: 4.5rem;
+    color: rgb(148, 11, 114);
+    text-transform: uppercase;
+    text-shadow: 0 .3rem ,5rem rgba(177, 11, 102, 0.1);
+
+
+  }
+  .videot .content p{
+    font-size: 2.5rem;
+    color: #cccccc;
+    padding: .5rem 0;
+
+  }
+  .videot .vc video{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .videot .videott{
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgba(0, 0, 0, .7);
+    position: relative;
+    top: 10rem;
+  }
+  .videot .videott .vid-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 .5rem;
+  }
+  .videot .vc .vid-btn.active{
+    background: var();
+  }
