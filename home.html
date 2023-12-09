@@ -10,7 +10,8 @@
 </head>
 <body>
     
-        <header class="homi">
+        <header>
+
             
             <div class="midis">
 
@@ -18,7 +19,8 @@
                 <br>
                     <a href="vendet.html"><button>Vendet</button></a>
                     <a href="flights.html" style=><button>Fluturimet</button></a>
-                    <a href="book.html" style="color: aliceblue"><button>Paketat</button></a>
+                    <a href="book.html" style="color: aliceblue"><button>Rezervo</button></a>
+                    
                     <br>
                 </div>
             <div class="qysh">
@@ -28,24 +30,16 @@
 
  
         </header>
-
-   
-        <form id="loginForm" onsubmit="validateLoginForm(); return false;">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+    <form id="registrationForm" onsubmit="validateForm(); return false;">
         
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            
-            <div class="login-register">
-                <p>Don't have an account?</p>
-                <a href="sign-in.html">Register</a>
-            </div>        
-            <button type="submit">Submit</button>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
 
-           
-        </form>
-        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" onclick="validateForm()">Submit</button>
+    </form>
 
 </body>
 </html>
