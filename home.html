@@ -6,7 +6,6 @@
     <title>DD Travel</title>
     
     <link rel="stylesheet" href = "style.css">
-    <script src="travel.js"></script>
 </head>
 <body>
     
@@ -29,23 +28,53 @@
  
         </header>
 
-   
-        <form id="loginForm" onsubmit="validateLoginForm(); return false;">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-        
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            
-            <div class="login-register">
-                <p>Don't have an account?</p>
-                <a href="sign-in.html">Register</a>
-            </div>        
-            <button type="submit">Submit</button>
+        <body>
 
-           
-        </form>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
         
-
-</body>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+        
+                <button type="submit" id="submitButton">Submit</button>
+            </form>
+        
+            <script>
+                function validateLoginForm() {
+                    var usernameRegex = /^.{8,15}$/;
+                    var passwordRegex = /^[A-Z].*[0-9]{3}$/;
+        
+                    var username = document.getElementById('username');
+                    var password = document.getElementById('password');
+        
+                    var error = '';
+        
+                    if (!usernameRegex.test(username.value)) {
+                        error += 'Username duhet te permbaj 8 deri 15 karaktere.\n';
+                    }
+        
+                    if (!passwordRegex.test(password.value)) {
+                        error += 'Passwordi duhet te filloj me shkronje te madhe dhe te perfundoj me 3 numra.\n';
+                    }
+        
+                    if (error !== '') {
+                        alert('Validation Error:\n' + error);
+                    } else {
+                        alert('Kerkesa u pranua me sukses!');
+                    }
+                }
+        
+                window.addEventListener('load', function() {
+                    var loginForm = document.getElementById('loginForm');
+        
+                    if (loginForm) {
+                        loginForm.addEventListener('submit', function(event) {
+                            event.preventDefault();
+                            validateLoginForm();
+                        });
+                    }
+                });
+            </script>
+        </body>
 </html>
