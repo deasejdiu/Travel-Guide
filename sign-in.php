@@ -22,6 +22,16 @@
     </style>
 </head>
 <body>
+<?php
+
+if(isset($_GET['loginError']) && $_GET['loginError']){
+?>
+    <div class="forminputerror" id="usernameError">
+        <?php echo $_GET['loginError']; ?>
+    </div>
+<?php
+}
+?>
 
     <form id="registrationForm" onsubmit="validateRegisterForm(); return false;">
         <label for="name">Name:</label>

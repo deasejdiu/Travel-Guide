@@ -28,7 +28,7 @@
             
         </header>
 
-            <form id="loginForm">
+            <form id="loginForm" method="post" action="welcome.php">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
         
