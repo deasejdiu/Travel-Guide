@@ -12,12 +12,14 @@
         <h1 style="color: rgb(173, 8, 107);">Flight Booking</h1> 
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $name = $_POST["name"];
             $departure = $_POST["departure"];
             $destination = $_POST["destination"];
             $departureDate = $_POST["departure-date"];
             $returnDate = $_POST["return-date"];
 
-            echo "<p>Flight search submitted:</p>";
+            echo "<p>Flight book submitted:</p>";
+            echo "<p>Name: $name</p>";
             echo "<p>Departure: $departure</p>";
             echo "<p>Destination: $destination</p>";
             echo "<p>Departure Date: $departureDate</p>";
@@ -26,7 +28,7 @@
         ?>
         <form action="flights_form.php" method="post">
             <label for="name">Name</label>
-            <select name="name" id="name">
+            <select name="name" id="name" required>
             <span>name :</span>
             <input type="text" placeholder="enter your name" name="name">
             </select>
@@ -66,8 +68,8 @@
             <label for="return-date">Return Date</label>
             <input type="date" id="return-date" name="return-date" required>
 
-            <button type="submit">Search Flights</button>
-        </form>
+            <button type="submit" value="submit" name="send">Book Flight</button>
+    </form>
     </div>
 </body>
 </html>
