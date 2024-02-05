@@ -9,6 +9,96 @@
     <title>DD Travel</title>
 </head>
 <body>
+<style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #sidebar {
+            width: 250px;
+            height: 100%;
+            background-color: #af4c82;
+            color: #fff;
+            padding-top: 20px;
+            position: fixed;
+        }
+
+        #sidebar a {
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        #sidebar a:hover {
+            background-color: #af4c82;
+        }
+
+        #content {
+            margin-left: 250px;
+            padding: 16px;
+        }
+
+        h2 {
+            color: #af4c82;
+            text-align: center;
+        }
+        table {
+             width: 100%;
+             border-collapse: collapse;
+             margin-top: 20px;
+            } 
+
+        th, td {
+             border: 1px solid #dddddd;
+             text-align: left;
+             padding: 12px;
+            }
+
+        th {
+            background-color: #af4c82;
+            }
+
+        tbody tr:hover {
+             background-color: #f5f5f5;
+            }
+            p{
+            color: whitesmoke;
+            text-align: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-bottom: 90px;
+            padding: 10px;
+        }   
+        .back{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-bottom: 40px; 
+            margin-left: 70px; 
+        } 
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        button{
+           justify-content: flex-start;
+           cursor:grab;
+           font-size: 15px;
+           padding:10px 30px;
+           border-radius: 10px;
+           text-decoration: none;
+           background-color:#af4c82;
+           align-items: center;
+}
+        button:hover{
+         background: rgba(215, 189, 226);
+        }   
+    </style>
     <header>
     </header>
 <body>
