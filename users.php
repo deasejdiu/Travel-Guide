@@ -131,26 +131,25 @@
         </tr>
     </thead>
     <tbody>                   
-            <?php
+    <?php
+try {
+    $query = "SELECT * FROM users ";
+    $databaseConnection = new DatabaseConnection();
+    $conn = $databaseConnection->startConnection();
+    $stmt = $conn->prepare($query);
+    $stmt->execute();
 
-            $query = "SELECT * FROM users ";
-            $databaseConnection = new DatabaseConnection();
-            $conn = $databaseConnection->startConnection();
-            $stmt = $conn->prepare($query);
-            $stmt->execute();
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+    foreach ($rows as $row) {
+        $id = $row['id'];
+        $username = $row['username'];
+        $email = $row['email'];
+        $number = $row['number'];
+        $password = $row['password'];
+        $usertype = $row['usertype'];
 
-            $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-                 foreach ($rows as $row) {
-                 $id = $row['id'];
-                 $username = $row['username'];
-                 $email = $row['email'];
-                 $number = $row['number'];
-                 $password = $row['password'];
-                 $usertype = $row['usertype'];
-                 
-                 echo '<tr>
+        echo '<tr>
                     <td>'.$id.'</td>
                     <td>'.$username.'</td>
                     <td>'.$email.'</td>
@@ -162,9 +161,12 @@
                      <button><a href="delete.php?deleteid='.$id.'">Delete</a></button>
                     </td>
                     </tr>';
-                 }
+    }
+} catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
+?>
 
-            ?>
 
 
     </tbody>
