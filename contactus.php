@@ -62,3 +62,37 @@
     </script>
 </body>
 </html>
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
+  $name = $_POST ["name"];
+  $email = $_POST ["email"];
+  $message = $_POST ["message"];
+
+  try {
+    require_once "dbconect.php";
+
+    $query = "INSERT INTO contact (name, email, message) VALUES
+    (?,?,?,?);";
+
+    $databaseConnection = new DatabaseConnection();
+    $conn = $databaseConnection->startConnection();
+    $stmt = $conn->prepare($query);
+
+    $stmt ->execute([$name ,$email ,$message]);
+
+    $pdo =null;
+    $stmt =null;
+
+    header("Location: home.php");
+    exit;
+
+  } catch (PDOException $e) {
+     die("Query failed:" .$e->getMessage());
+  }
+
+
+}else{
+  header("Location:home.php");
+}
+?>
