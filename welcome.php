@@ -14,7 +14,7 @@ else{
         echo "<script>location.href='welcome.php'</script>";
     }else{
         echo "<script>alert('perdoruesi ose fjalkalimi eshte gabim!')</script>";
-        echo "<script>location.href='index.php'</script>";
+        echo "<script>location.href='home.php'</script>";
     }
 }
 ?>

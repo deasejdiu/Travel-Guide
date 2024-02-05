@@ -23,7 +23,7 @@
                     <br>
                 </div>
             <div class="qysh">
-                <a href="contactus.html"style="color: aliceblue"><button>Contact Us</button></a>
+                <a href="contactus.php"style="color: aliceblue"><button>Contact Us</button></a>
             </div>
             
         </header>
@@ -37,7 +37,7 @@
 
                 <div class="login-register">
                     <p>Don't have an account?</p>
-                    <a href="sign-in.html">Register</a>
+                    <a href="sign-in.php">Register</a>
                 </div>
         
                 <button type="submit" id="submitButton">Submit</button>
