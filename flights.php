@@ -9,7 +9,21 @@
 <body>
     
     <div class="container">
-        <h1 style="color: rgb(173, 8, 107);">Flight Booking</h1>
+        <h1 style="color: rgb(173, 8, 107);">Flight Booking</h1> 
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $departure = $_POST["departure"];
+            $destination = $_POST["destination"];
+            $departureDate = $_POST["departure-date"];
+            $returnDate = $_POST["return-date"];
+
+            echo "<p>Flight search submitted:</p>";
+            echo "<p>Departure: $departure</p>";
+            echo "<p>Destination: $destination</p>";
+            echo "<p>Departure Date: $departureDate</p>";
+            echo "<p>Return Date: $returnDate</p>";
+        }
+        ?>
         <form action="#" method="post">
             <label for="departure">Departure Location</label>
             <select name="departure" id="departure" required>
