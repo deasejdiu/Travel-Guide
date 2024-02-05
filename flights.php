@@ -24,7 +24,12 @@
             echo "<p>Return Date: $returnDate</p>";
         }
         ?>
-        <form action="#" method="post">
+        <form action="flights_form.php" method="post">
+            <label for="name">Name</label>
+            <select name="name" id="name">
+            <span>name :</span>
+            <input type="text" placeholder="enter your name" name="name">
+            </select>
             <label for="departure">Departure Location</label>
             <select name="departure" id="departure" required>
                 <option value="" disabled selected>Select Departure City</option>
